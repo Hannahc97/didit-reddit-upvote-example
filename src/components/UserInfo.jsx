@@ -5,6 +5,8 @@ import { LogoutButton } from "./LogoutButton";
 export async function UserInfo() {
   const session = await auth();
 
+  console.log(session)
+
   return (
     <div>
       {session ? (
